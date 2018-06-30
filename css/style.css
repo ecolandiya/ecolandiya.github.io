@@ -40,6 +40,8 @@ header {
 	/*padding: 17px 55px 17px 55px;*/
 	padding: 17px 55px;
 	margin-top: 33px;
+	display: inline-block;
+	text-decoration: none;
 }
 header small {
  font-size: 12px;
@@ -143,6 +145,7 @@ margin-bottom: 7px;
 	font-style: 18px;
 	border-radius: 50px;
 	padding: 12px 40px;
+	text-decoration:none;
 }
 
 /*медиазапросы*/
