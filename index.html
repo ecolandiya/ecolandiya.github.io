@@ -15,6 +15,7 @@
 		<!-- Заголовок на вкладке в браузере -->
 		<title>Артем Иссламов - создание сайтов</title>
 		<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+		<link rel="stylesheet" href="css/animate.css">
 
 		<!-- Подключаем наш файл со стилями, который находится в папке css-->
 		<link rel="stylesheet" href="css/style.css">
@@ -33,15 +34,18 @@
 		<div class="container">
 		<div class="row">
 			<div class="col-lg-7">
-				<img class="header-img" src="img/main-img.png" alt="Монитор">
+				<!-- назначаем картинке два класса первый: header-img второй для анимации wow + tada или любой другой -->
+				<!-- Задержка анимации происходит подключение JS файла wow, на него заменяется animate везде после в тег прибалвяется data-wow-delay -->
+
+				<img class="header-img wow fadeInLeftBig" src="img/main-img.png" alt="Монитор">
 			</div>
 			<div class="col-lg-5">
-				<p class="header-pretitle">Веб-разработчик</p>
-				<h1 class="header-title">Роберт Аглямов</h1>
-				<p class="header-subtitle">Верстка на HTML/CSS<br>
+				<p class="header-pretitle wow fadeInRightBig" data-wow-delay="0.1s">Веб-разработчик</p>
+				<h1 class="header-title wow fadeInRightBig" data-wow-delay="0.2s">Роберт Аглямов</h1>
+				<p class="header-subtitle wow fadeInRightBig" data-wow-delay="0.3s">Верстка на HTML/CSS<br>
 				Разработка сайтов под ключ</p>
-				<div class="header-button-block">
-					<a href="https://vk.com/bonusdiez" class="header-button">Связаться</a>
+				<div class="header-button-block wow fadeInRightBig" data-wow-delay="0.4s">
+					<a href="https://vk.com/bonusdiez" class="header-button wow fadeInRightBig">Связаться</a>
 					<small>*Это бесплатно</small>
 				</div>
 
@@ -54,7 +58,7 @@
 <!-- секция порфолио начало -->
 	<section class="portfolio">
 		<div class="container">
-			<div class="portfolio-block">
+			<div class="portfolio-block wow fadeIn">
 				<h2 class="portfolio-title">Портфолио</h2>
 				<p class="portfolio-subtitle">Мои работы</p>
 				<div class="row">
@@ -90,10 +94,14 @@
 					<div class="social-block">
 						<p>Подпишитесь:</p>
 						<!-- a[#]*4>img -->
-						<a href="https://fb.com"><img src="img/socials/facebook-logo-button.png" alt="fb.com"></a>
-						<a href="https://telegram.com"><img src="img/socials/telegram-symbol.png" alt="telegram.com"></a>
-						<a href="https://vk.com/bonusdiez"><img src="img/socials/vk-social-logotype.png" alt="vk.com"></a>
-						<a href="https://youtube.com"><img src="img/socials/youtube-symbol.png" alt="youtube.com"></a>
+						<a class="wow bounceInDown" data-wow-delay="0.1s" href="https://fb.com">
+							<img src="img/socials/facebook-logo-button.png" alt="fb.com"></a>
+						<a class="wow bounceInDown" data-wow-delay="0.2s" href="https://telegram.com">
+							<img src="img/socials/telegram-symbol.png" alt="telegram.com"></a>
+						<a class="wow bounceInDown" data-wow-delay="0.3s" href="https://vk.com/bonusdiez">
+							<img src="img/socials/vk-social-logotype.png" alt="vk.com"></a>
+						<a class="wow bounceInDown" data-wow-delay="0.4s" href="https://youtube.com">
+							<img src="img/socials/youtube-symbol.png" alt="youtube.com"></a>
 					</div>
 				</div>
 				<div class="col-md-4">
@@ -107,8 +115,13 @@
 		</div>
 	</footer>
 
-	
- <!-- Тут будет cодержимое будущего сайта -->
+	<!-- Задержка анимации Reveal CSS animation as you scroll down a page http://mynameismatthieu.com/WOW/ -->
+		<script src="js/wow.min.js">
+		</script>
+		<script>
+			new WOW().init();
+		</script>
+
 
 </body>
 </html>
